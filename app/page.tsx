@@ -3,14 +3,14 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center bg-navy-950 text-white">
-      <section className="flex w-[87%] flex-col items-center justify-center overflow-hidden rounded-lg bg-blue-950 text-center shadow-card md:max-w-[564px] xl:max-w-[1128px] xl:flex-row-reverse">
+      <section className="flex w-[87%] flex-col items-center justify-center overflow-hidden rounded-lg bg-blue-950 text-center shadow-card md:max-w-[564px] xl:h-[442px] xl:max-w-[1128px] xl:flex-row-reverse">
         <div className="relative w-full bg-purple-500 md:hidden">
           <Image
             src="/image-header-mobile.jpg"
             width={654}
             height={480}
             alt="People having fun"
-            className="h-full w-full object-cover opacity-75 mix-blend-multiply"
+            className="w-full object-contain opacity-75 mix-blend-multiply"
           />
         </div>
         <div className="relative hidden w-full bg-purple-500 md:block">
@@ -19,10 +19,10 @@ export default function Home() {
             width={540}
             height={446}
             alt="People having fun"
-            className="h-full w-full object-cover opacity-75 mix-blend-multiply"
+            className="w-full object-contain opacity-75 mix-blend-multiply"
           />
         </div>
-        <article className="flex flex-col px-400 py-300 md:px-1000 md:py-800 md:text-start">
+        <article className="flex h-auto flex-col px-400 py-300 md:px-1000 md:py-800 md:text-start">
           <h1 className="my-100 text-preset-2 md:mt-0 md:mb-300 md:text-preset-1">
             Get <span className="text-purple-500">insights</span> that help your
             business grow.
