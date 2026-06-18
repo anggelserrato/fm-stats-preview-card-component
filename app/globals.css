@@ -1,26 +1,58 @@
 @import 'tailwindcss';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-white: hsl(0, 100%, 100%);
+  --color-navy-950: hsl(233, 47%, 7%);
+  --color-blue-950: hsl(244, 37%, 16%);
+  --color-blue-500: hsl(277, 64%, 61%);
+  --background-image-mobile-pattern: url('/image-header-mobile.jpg');
+  --background-image-desktop-pattern: url('/image-header-desktop.jpg');
+  --spacing-100: 8px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-800: 64px;
+  --spacing-900: 72px;
+  --spacing-1000: 80px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@theme inline {}
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-white);
+}
+
+@utility text-preset-1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+
+@utility text-preset-2 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+
+@utility text-preset-3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.20;
+  letter-spacing: 0;
+}
+
+@utility text-preset-4 {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.65;
+  letter-spacing: 0;
+}
+
+@utility text-preset-5 {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 1px;
 }

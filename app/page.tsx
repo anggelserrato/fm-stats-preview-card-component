@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <main>
+    <main className="flex flex-col items-center justify-center">
       <section>
         <p>Get insights that help your business grow.</p>
         <p>
