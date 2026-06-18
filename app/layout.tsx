@@ -4,10 +4,12 @@ import './globals.css';
 
 const inter = Inter({
   subsets: ['latin'],
+  variable: '--font-inter',
 });
 
 const lexendDeca = Lexend_Deca({
   subsets: ['latin'],
+  variable: '--font-lexend-deca',
 });
 
 export const metadata: Metadata = {
@@ -24,7 +26,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.className} ${lexendDeca.className} h-full antialiased`}
+      className={`${inter.variable} ${lexendDeca.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col">{children}</body>
     </html>
