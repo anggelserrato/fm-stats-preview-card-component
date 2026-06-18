@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+<img width="1920" height="1440" alt="stats preview card component shots" src="https://github.com/user-attachments/assets/e7d279e4-22e7-4120-8558-f3029423584f" />
 
 ### Links
 
@@ -41,7 +41,6 @@ Users should be able to:
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
 ### Useful resources
 
